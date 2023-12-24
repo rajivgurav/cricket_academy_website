@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h1>Contact Us Form</h1>
+            <input name="firstname" type="text" id="firstName" placeholder="First Name" required>
+            <input name="lastname" type="text" id="lastName" placeholder="Last Name" required>
+            <input name="email" type="email" id="email" placeholder="Email" required>
+            <input name="mobile" type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea name="message" placeholder="message" row="4" required></textarea>
+            <input type="submit" name="submit-form" value="Send" id="button">
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "rajivgurav712@gmail.com",
+                Password : "rajivgurav1313",
+                To : 'rajivgurav712@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
+    </script>
+</body>
+</html>

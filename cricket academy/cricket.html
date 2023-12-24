@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Academy</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="..//cricket academy\logo1.jpg" height="180px" width="220px">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="cricket.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contactus.html">CONTACT</a></li>
+                    <li><a href="coach.html">COACH</a></li>
+                    <li><a href="registerc.html">Registeration</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Welcome <br><span>to our Academy</span> <br></h1>
+            <p class="par">This course has been designed by industry experts and stalwarts from the cricket fraternity to<br>
+               provide students with an opportunity to continue their passion for cricket <br> in a scientific way and the best use of available technology.</p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <form action="connect.php" method="post">
+                        <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="password" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                    </form>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Our Speciality</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#Power Fitness">Power Fitness</a>
+                      <a href="#1:1 Sessions">1:1 Sessions</a>
+                      <a href="#365 Days Turf Wicket Practice">365 Days Turf Wicket Practice</a>
+                      <a href="# Batting, Bowling & Fielding Specialisation"> Batting, Bowling & Fielding Specialisation</a>
+                      <a href="#Special Grooming">Special Grooming</a>
+                      <a href="#Sports Injury Rehab">Sports Injury Rehab</a>
+                      <a href="# Action Camera Analysis"> Action Camera Analysis</a>
+                      <a href="#24X7 Online Support">24X7 Online Support</a>
+                    </div>
+                  </div>
+                  
+                  <script>
+                  /* When the user clicks on the button, 
+                  toggle between hiding and showing the dropdown content */
+                  function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                  }
+                  
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                  }</script>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
